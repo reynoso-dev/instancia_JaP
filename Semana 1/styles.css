@@ -1,0 +1,14 @@
+body{
+    background-color: green;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+p{
+    font-size: large;
+    color: white;
+}

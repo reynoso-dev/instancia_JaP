@@ -1,0 +1,79 @@
+Concepto de INFRAESTRUCTURA: conjunto de servicios, medios técnicos e instalaciones que permiten el desarrollo de una actividad.
+
+Para IBM, la infraestructura de tecnología de la información, o infraestructura de TI, se refiere al conjunto de componentes necesarios para el funcionamiento y la gestión de los servicios empresariales de TI y entornos de TI.
+
+Para Kenneth y Jane Laudon, la infraestructura de TI consiste en un conjunto de dispositivos físivos y aplicaciones de software requeridas para operar toda la empresa. Sin embargo, esta infraestructura también es un conjunto de servicios a nivel empresarial presupuestado por la gerencia, que abarca las capacidades tanto humanas como técnicas.
+
+Para James F. Kurose y Keith W. Ross, la infraestructura de TI se refiere al conjunto de hardware, software, redes y servicios necesarios para operar y administrar la tecnología de la información en una organización.
+
+Tipos de Infraestructura: 
+
+TRADICIONAL : En este tipo de infraestructura LAS EMPRESAS SON DUEÑAS DE SUS COMPONENTES TECNOLÓGICOS Y LOS GESTIONAN DENTRO DE SUS INSTALACIONES; se basa principalmente en HARDWARE.
+Está conformada por los componentes habituales de hardware y software: instalaciones, centros de datos, servidores, computadoras de escritorio de hardware de red y soluciones de software de aplicaciones empresariales.
+Normalmente, esta infraestructura REQUIERE MÁS ENERGÍA, ESPACIO FÍSICO Y DINERO que otros tipos de infraestructura.
+
+¿POR QUÉ ES IMPORTANTE LA INFRAESTRUCTURA TI?
+- La infraestructura de TI proporciona soporte a las operaciones empresariales, mejora la comunicación y colaboración, aumenta la seguridad y proporciona almacenamiento y acceso a la información.
+
+EN LA NUBE: Es un MODELO BASADO EN SERVICIOS, en el que LOS PROVEEDORES SON LOS ENCARGADOS DE ADMINISTRAR Y GESTIONAR LA INFRAESTRUCTURA. Aunque es similar a la infraestructura tradicional, ésta OFRECE A LOS USUARIOS FINALES LA POSIBILIDAD DE ACCEDER A ELLA A TRAVÉS DE INTERNET, sin necesidad de instalaciones locales. En la nube, la virtualización juega un papel fundamental.
+Esta tecnología CONECTA SERVIDORES FÍSICOS DE UN PROVEEDOR DE SERVICIOS EN CUALQUIER LUGAR DEL MUNDO Y DIVIDE Y EXTRAE LOS RECURSOS, como el almacenamiento, para ponerlos a disposición de los usuarios prácticamente en cualquier parte del mundo donde haya conexión a Internet sin preocuparse por la ubicación física de la infraestructura.
+
+En resumen, la infraestructura en la nube es una alternativa FLEXIBLE y ACCESIBLE para los usuarios, que ofrece la posibilidad de utilizar recursos informáticos sin tener que invertir grandes sumas de dinero en una infraestructura propia.
+
+Según IBM, con una infraestructura TI una empresa puede:
+	- Ofrecer una experiencia positiva al cliente proporcionando acceso ininterrumpido a su sitio web y a su tienda en línea.
+	- Desarrollar y comercializar soluciones rápidamente.
+	-Recopilar datos en tiempo real para la toma rápida de decisiones.
+	-Mejorar la productividad de los empleados.
+
+Según icorp, éstos son los beneficios de la infraestructura de TI: 
+	- Permite centralizar la información.
+	-Aumentar la seguridad de la información.
+	-Minimiza riesgos de falla.
+	-Reduce costos operativos.
+	-Mejora la productividad laboral.
+	-Facilita el trabajo y la comunicación a distancia.
+	-Habilita la expansión del negocio a otras fronteras.
+
+		COMPONENTES DEL HARDWARE:
+
+Instalaciones: son el conjunto de elementos físicos que conforman la infraestructura TI, incluyendo los equipos de cómputo, servidores, dispositivos de red, sistemas de almacenamiento, etc.
+Es decir, es EL LUGAR DONDE SE ALOJA EL HARDWARE DE LA INFRAESTRUCTURA.
+
+Servidores: son COMPUTADORAS QUE SE UTILIZAN PARA PROPORCIONAR SERVICIOS A OTROS DISPOSITIVOS, como el almacenamiento y la gestión de datos, la gestión de correo electrónico o la gestión de redes.
+SON COMPONENTES ESENCIALES y desempeñan un papel crítico en el funcionamiento de las empresas y organizaciones modernas.
+
+Computadoras: son DISPOSITIVOS ELECTRÓNICOS CAPACES DE PROCESAR INFORMACIÓN Y EJECUTAR PROGRAMAS, y se utilizan en una variedad de tareas, desde la gestión de bases de datos hasta el procesamiento de texto y gráficos.
+
+Centros de datos: son INSTALACIONES QUE ALBERGAN UNA GRAN CANTIDAD DE EQUIPOS DE CÓMPUTO Y SERVIDORES, y están diseñados para garantizar la seguridad y el mantenimiento de la infraestructura IT.
+
+Dispositivos de red: son ELEMENTOS DE HARDWARE QUE SE UTILIZAN PARA CONECTAR DISPOSITIVOS DE CÓMPUTO Y SERVIDORES A TRAVÉS DE UNA RED. Ejemplos de dispositivos de red incluyen ROUTERS, SWITCHES, HUBS y FIREWALLS.
+
+Redes: son SISTEMAS QUE CONECTAN MÚLTIPLES DISPOSITIVOS ELECTRÓNICOS Y PERMITEN QUE SE COMUNIQUEN Y COMPARTAN RECURSOS ENTRE SÍ.
+	Redes LAN: las redes de área local (LAN: Local Area Network), son REDES DE PROPIEDAD PRIVADA que operan dentro de un solo edificio, como una casa, oficina o fábrica.
+Se utilizan ampliamente para conectar computadoras personales y electrodomésticos con el fin de compartir recursos (por ejemplo, IMPRESORAS) e intercambiar información. Cuando las empresas utilizan redes LAN se les conoce como redes empresariales. 
+
+	Redes WAN: una red de área amplia (WAN: Wide Area Network) abarca una extensa área geográfica, por lo general un país o continente.
+
+		COMPONENTES DEL SOFTWARE
+
+Sistemas Operativos: son programas de software que PERMITEN QUE EL HARDWARE DE UNA COMPUTADORA FUNCIONE Y SE COMUNIQUEN CON OTROS DISPOSITIVOS. Los sistemas operativos son esenciales para la gestión de recursos, el control de procesos y el acceso a archivos y aplicaciones.
+
+Servidores Web: son PROGRAMAS QUE PERMITEN A LOS USUARIOS ACCEDER A SITIOS WEB A TRAVÉS DE INTERNET. Los servidores web proporcionan servicios como el alojamiento de sitios web, el correo electrónico, el almacenamiento de archivos y la gestión de bases de datos.
+
+Sistema de gestión de contenidos (CMS) : son APLICACIONES DE SOFTWARE QUE PERMITEN A LOS USUARIOS CREAR, EDITAR Y PUBLICAR CONTENIDO EN LÍNEA. Los CMS se utilizan comúnmente para la gestión de sitios web, blogs, foros y tiendas en línea.
+
+Gestión de relaciones con el cliente (CRM): es un CONJUNTO DE PRÁCTICAS Y HERRAMIENTAS UTILIZADAS PARA ADMINISTRAR Y ANALIZAR LAS INTERACCIONES CON LOS CLIENTES Y MEJORAR LA RELACIÓN CON ELLOS. Los sistemas CRM suelen incluir funciones de seguimiento de ventas, marketing, atención al cliente y análisis de datos.
+
+Planificación de recursos empresariales (ERP) : son SISTEMAS DE SOFTWARE INTEGRADOS QUE PERMITEN A LAS EMPRESAS GESTIONAR Y AUTOMATIZAR SUS PROCESOS COMERCIALES. Los sistemas ERP suelen incluir módulos para la gestión financiera, la gestión de la cadena de suministro, la gestión de recursos humanos y la gestión de proyectos.
+
+
+			¿QUÉ ES EL INTERNET?
+
+Según Kenneth y Jane Laudon, Internet se ha convertido en el sistema de comunicación público más extenso del mundo. También es la implementación más grande en el mundo de la computación cliente / servidor y de las interredes, ya que vincula a millones de redes individuales en todo el mundo. Esta red de redes global empezó a principios de la década del '70 como una red del Departamento de Defensa de los Estados Unidos.
+
+Según James F. Kurose y Keith W. Ross, hay dos formas de responder a esta pregunta. La primera de ellas es describiendo las tuercas y tornillos que forman la red, es decir, los componentes hardware y software básicos que forman Internet. La segunda es describiéndola en términos de la infraestructura de red que proporciona servicios a aplicaciones distribuidas. 
+
+En resumen, Internet es una red global de computadoras interconectadas que facilita el intercambio de información y la comunicación en todo el mundo, transformando la forma en que las personas se conectan, colaboran y acceden a la información.
+
+Un protocolo es un conjunto de reglas y procedimientos que gobiernan la transmision de información entre dos puntos en una red.

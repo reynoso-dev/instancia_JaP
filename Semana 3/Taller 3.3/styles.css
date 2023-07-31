@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+:root{ /*esta pseudoclase representa al documento HTML, y es idéntico al selector <html>, pero es más específico.*/
+    --purple:#2F192E;
+    --purple-light:#30192d;
+    --dark-blue:#012677;
+    --blue:#5c65c0;
+    --skyblue:#00b4fc;
+    --light-blue:#005bc5;
+    --dark-magenta:#e21b5a;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  /*propiedad que sirve para que los elementos mantengan su tamaño.*/
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: radial-gradient(circle, rgba(7,6,29,1) 0%, rgba(40,36,73,1) 50%, rgba(50,47,75,0.9789644012944984) 100%);
+}
+
+/*sección perfil*/
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.profile{
+   background: #111;
+   width: 400px;
+   padding: 3rem; 
+   border-radius: 10px;
+   min-height: 400px;
+   position: relative;
+   color: aliceblue;
+   margin: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+}
+
+.profile .profile_img{
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.profile .profile_img img{
+    border-radius: 15px;
+}
+
+.profile .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-details #introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-details #introduction h2{
+    margin-top: 20px;
+}
+ 
+.profile-details #introduction h4{
+    background:#1d1d1d;
+    font-weight: bolder;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px;
+}
+
+.profile-details #introduction #socials{
+    margin-top: 10px;
+    margin-bottom: 25px;  
+}
+
+.profile-details #introduction #socials i{
+    color: #ddd;
+    font-size: 16px;
+    background-color: #222;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.profile-details #introduction #socials i:hover{
+    transform:scale(1.2);
+    border:1px solid rgba(255, 255, 255, 0.45);
+}
+
+.profile-details #contact-info{
+ background-color: #1d1d1d;
+ padding: 15px;
+ border-radius: 10px;
+ width: 100%;
+}
+
+.profile-details #contact-info .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+    padding:10px 0;
+    margin-bottom: 10px;
+}
+
+#contact-info .row .icon{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    background-color: #111;
+    text-align: center;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.row .icon:hover{
+    transform: scale(1,1.15);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.row .content{
+    min-width: 70%;
+}
+
+.row .content span{
+    font-size: 12px;
+}
+
+
+#download-btn{
+    background: linear-gradient(30deg,#111, #2f1f61);
+    color: #fff;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    border: none;
+
+}
+
+/*sección "acerca de mí"*/
+
+#about{
+    background-color: #111;
+    max-width: 800px;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+#about h1{
+    color: antiquewhite;
+    margin-bottom: 1.1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+}
+
+#about h1::after{
+    position: absolute;
+    content: "";
+    top:50%;
+    right: -50%;
+    width: 45%;
+    height: 3px;
+    background: #2f1f61;
+}
+
+#about h2{
+    color: #f2f2f2;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+#about p{
+    color: #555;
+    margin: 1.5rem 0;
+}
+
+#about .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.projects .workbox{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.projects .workbox .desc{
+    width: 75%;
+    color: #555;
+}
+
+.projects .workbox .desc h3{
+    color: antiquewhite;
+    margin-bottom: 3px;
+}
+
+.projects .workbox .desc p{
+    margin: 0px;
+}
+
+/*Media Queries para Diseño Responsive*/
+
+@media(max-width:768px)
+{
+    #about{
+        width:1005;
+        max-width: 400px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    #about h1{
+        font-size: 2.2rem;
+    }
+
+    #about .projects{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:repeat(4,auto);
+    }
+}

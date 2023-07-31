@@ -1,0 +1,46 @@
+ 1)
+  - En el bloque 1, se gestiona la búsqueda de la película, mediante el texto que se envía en el formulario y el botón de "Buscar".
+
+  - En el bloque 2, es el último en funcionar. En el, se evalúa el resultado a la consulta hecha a la API. Si hay algún fallo en el servidor
+    donde se gestiona la búsqueda, la página nos lanza un "alert" que indica que hubo un error. De lo contrario, nos devuelve el listado de las peliculas que coinciden con el título.
+
+  - En el bloque 3, se realiza la consulta a la base de datos, y se evalúa si existe (O NO) el pedido y luego almacena los datos obtenidos en un JSON.  
+    En base a los resultados obtenidos, esta información se retorna en una función llamada getMovies, la cual será utilizada en el bloque 2. Ésta verifica los resultados de la consulta. 
+
+  -  En el bloque 4, en el container dispuesto en el HTML, se llama a la función "getCardHTML", que nos devuelve el póster correspondiente
+   a la película y su título; además, programa un botón "Ver Más", que si se pulsa, nos redirecciona a otra página la cual es una búsqueda en
+   Google de la película a consultar.
+
+2)
+
+Los endpoints son: 
+    `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}`; (hace la query a la base de Datos de películas.)
+     "https://image.tmdb.org/t/p/w500"; (nos devuelve el póster que pertenece a la película)
+     "https://google.com/search?q="; (realiza la consulta a google acerca de información sobre la pelicula que buscamos)
+
+3)
+
+Se utiliza el método "GET", el cual se utiliza para obtener informacion.
+
+4)
+Sí. Se utilizan JSONs para el almacenaje de la información procedente de la Base de Datos.
+
+5)
+
+Se utiliza solamente la pseudoclase :hover en la clase .card, que hace el efecto de agrandar la tarjeta de la película. 
+Éstos se utilizan para aplicar estilos a un elemento cuando se encuentre en un estado determinado.
+
+6)
+Se utiliza solamente el pseudoelemento ::first-letter en el h1 , que colorea la primer letra de la oración en el h1.
+Éstas permiten insertar contenido en la página, como si fueran elementos del propio HTML.
+
+
+
+Integrantes: 
+
+Gianfranco Reynoso
+Florencia Menendez
+Franco Martinez
+Mateo Pedetti 
+Danilo Bursi  
+Javier Abreu

@@ -1,0 +1,154 @@
+//declaré los constructores en los cuales fueron definidos los objetos que serán utilizados más adelante.
+
+class dataBase {
+    constructor(nombre, apellido, departamento) {
+            this.name = nombre,
+            this.surname = apellido,
+            this.city = departamento;
+    }
+}    
+
+class approveNote {
+    constructor(notaFundamentos, notaImperativa, notaPOO, notaIngles, notaCT) {
+            this.fundamentos = notaFundamentos,
+            this.imperativa = notaImperativa,
+            this.POO = notaPOO,
+            this.english = notaIngles,
+            this.CT = notaCT;
+    }
+
+}
+
+class evidence {
+    constructor(evidenceFundamentos, evidenceImperativa, evidencePOO) {
+            this.evidenciaFundamentos = evidenceFundamentos,
+            this.evidenciaImperativa = evidenceImperativa,
+            this.evidenciaPOO = evidencePOO;
+
+    }
+}
+
+// ---------------------*----------------------------*----------------------*------------------------*-------------------*
+
+//declaro las variables que serán almacenadas en los objetos.
+
+let estudianteNo1 = new dataBase("Gianfranco", "Reynoso", "Montevideo")
+let estudianteNo2 = new dataBase("Rony", "Silva", "Canelones")
+let estudianteNo3 = new dataBase("Eugenia", "Supervielle", "Montevideo")
+let estudianteNo4 = new dataBase("Juan", "Bessero", "Durazno")
+let estudianteNo5 = new dataBase("Alejandro", "Melo", "Soriano")
+let estudianteNo6 = new dataBase("Marianela", "Domínguez", "San José")
+let estudianteNo7 = new dataBase("Pablo", "De León", "Paysandú")
+
+let aprobacion = new approveNote (100, 100, 100, 99, 10)
+let repechaje = new approveNote (60, 70, 80, 40, 4)
+let desaprobacion = new approveNote (35, 31, 29, 75, 9)
+let inglesInsuficiente = new approveNote (90, 97, 98, 40, 7)
+let CTinsuficiente = new approveNote (75, 40, 69, 86, 3)
+let inglesInsuficienteRepechaje = new approveNote (70, 22, 45, 70, 10)
+let CTinsuficienteRepechaje = new approveNote (59, 40, 49, 25, 8)
+
+let approveEvidence = new evidence(true, true, true)
+let failAll= new evidence(false, false, false)
+let failAtLeastOne = new evidence(true, false, true) || (true, true, false) || (false, true, true)
+
+// ---------------------*----------------------------*----------------------*------------------------*-------------------*
+
+//declaro las funciones que determinarán el promedio de cada alumno, y cuantas evidencias entregaron los mismos.
+
+function enumerateEvidences (evidence1, evidence2, evidence3){
+    let allEvidences = 0;
+
+      if (evidence1) {
+        allEvidences++;
+      }
+    
+     if (evidence2) {
+        allEvidences++;
+      }
+    
+     if (evidence3) {
+        allEvidences++;
+      }
+
+      return allEvidences;
+}
+
+function averageNotes (note1, note2, note3){
+ 
+    const average = note1*0.30 + note2*0.50 + note3*0.20
+
+    return average
+}
+
+
+
+// ---------------------*----------------------------*----------------------*------------------------*-------------------*
+
+// declaro la función que retornará el mensaje que dictaminará si el alumno aprueba o no.
+
+function lastJudgement (student, notes, evidences){
+
+    let averages = averageNotes(notes.fundamentos, notes.imperativa, notes.POO);
+    let evidencesCompleted = enumerateEvidences(evidences.evidenciaFundamentos, evidences.evidenciaImperativa, evidences.evidenciaPOO);
+    
+    let message = `Saludos ${student.name} ${student.surname}! Enseguida pasaremos a enumerar tus puntos en las correspondientes asignaturas:\n
+                En Ingles:  ${notes.english} puntos. \n
+                En CT:  ${notes.CT} tareas. \n
+                En Técnica:  ${averages} puntos \n
+                Evidencias entregadas:  ${evidencesCompleted}. \n`
+
+
+if ((notes.english >= 50) && (evidencesCompleted === 3) && (averages >= 60) && (notes.CT === 10)) { 
+
+    message += `En conclusión: Usted ha aprobado la fase 1. ¡Felicidades!` 
+   }
+
+   else if ((averages >= 50 && averages <= 60) && (evidencesCompleted === 3) && (notes.ingles >= 50) && (notes.CT === 10)){
+
+    message += `Su promedio final dictaminó que en Técnica,usted se encuentra en el rango de notas entre 50-60; es por ello que \n
+                se le concederá una chance para exonerar, la cual consiste en realizar un exámen con supervisión. \n
+                Para aprobar el mismo, necesitará llegar al 60%. \n
+                ¡Mucha suerte, y a no decaer!`
+   }
+   else if ((averages >= 60) && (evidencesCompleted < 3) && (notes.english >= 50) && (notes.CT === 10)){
+
+     message += `Su puntaje de ${averages} puntos, indica que usted pudo exonerar. Sin embargo, la base de datos indica que a usted \n
+                le faltan evidencias de las respectivas evaluaciones; es por esto que tiene derecho a realizar un exámen bajo supervisión. \n 
+                Para aprobar el mismo, necesitará llegar al 60%.\n
+                ¡Mucha suerte, y a no decaer!`
+   }
+   else {
+     
+     message += `Usted ha reprobado la fase 1 de Jóvenes a Programar, a causa de las siguientes razones: \n
+                * No lograr alcanzar el mínimo de 50 puntos en Inglés, 50 puntos en Técnica y las 3 evidencias. 
+                * Por no haber realizado las 10 tareas de Competencias Transversales.`
+   }
+
+   return message;
+}
+
+
+  console.log (lastJudgement(estudianteNo1, aprobacion, approveEvidence));  
+      
+/*
+    console.log (lastJudgement(estudianteNo1, aprobacion, approveEvidence))                        Alumn@ con todo lo necesario para aprobar Fase 1.
+
+    console.log (lastJudgement(estudianteNo2, desaprobacion, failAtLeastOne))                      Alumn@ con baja nota y faltando evidencia
+
+    console.log (lastJudgement(estudianteNo3, repechaje, approveEvidence))                         Alumn@ con nota de repechaje y con evidencias
+
+    console.log (lastJudgement(estudianteNo4, aprobacion, failAtLeastOne))                         Alumn@ con nota suficiente pero faltando evidencia
+
+    console.log (lastJudgement(estudianteNo5, desaprobacion, failAtLeastOne))                      Alumn@ con nota de repechaje y faltando evidencia
+
+    console.log (lastJudgement(estudianteNo6, CTinsuficiente, approveEvidence))                    Alumn@ todo aprobado pero sin CT completo
+
+    console.log (lastJudgement(estudianteNo7, inglesInsuficiente, approveEvidence))                Alumn@ con todo aprobado pero sin Ingles suficiente
+
+    console.log (lastJudgement(estudianteNo5, inglesInsuficienteRepechaje,approveEvidence))        Alumn@ con ingles bajo pero con posibilidad de repechaje por promedio
+
+    console.log (lastJudgement(estudianteNo2, CTinsuficiente, failAll))                            Alumn@ con CT incompleto sin repechaje por falta de evidencia
+
+    */
+
